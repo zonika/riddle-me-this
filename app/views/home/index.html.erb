@@ -2,3 +2,8 @@
 <h3>Here I am</h3>
 <p>Find me in app/views/home/index.html.erb</p>
 <p>Cheesey Poofs</p>
+<%= form_tag("/send", method: "post") do %>
+  <%= label_tag(:number_to_send_to, "Send to:") %>
+  <%= text_field_tag(:number_to_send_to) %>
+  <%= submit_tag("Send") %>
+<% end %>
