@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
 
-  root "home#index"
   post '/send', to: "text#send_text_message"
-  get '/request', to: 'text#request'
+  post '/', to: 'text#send_sms'
 end
