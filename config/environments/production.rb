@@ -1,3 +1,4 @@
+require 'yaml'
 Rails.application.configure do
   GA.tracker = Rails.application.secrets.google_analytics_code
   config.action_mailer.default_url_options = { host: Rails.application.secrets.host }
