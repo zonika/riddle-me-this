@@ -3,7 +3,8 @@ class User < ActiveRecord::Base
   validates :name, presence: true
 
   def self.send_questions
-    riddle = Riddle.all.sample.question
+    riddle = Riddle.all.sample
+    question = riddle.question
     twilio_sid = ENV['TWILIO_ACCOUNT_SID']
     twilio_token = ENV['TWILIO_AUTH_TOKEN']
     twilio_phone_number = "18452131363"
@@ -16,7 +17,7 @@ class User < ActiveRecord::Base
         @twilio_client.account.messages.create({
           :from => twilio_phone_number,
           :to => "+1" + number_to_send_to.to_s,
-          :body => riddle
+          :body => question
           })
       rescue Twilio::REST::RequestError => error
         puts error.message
