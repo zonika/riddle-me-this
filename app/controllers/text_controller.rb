@@ -5,10 +5,13 @@ class TextController < ApplicationController
   end
 
   def send_sms
-    # get user by phone number
-    # get response
+    user = User.find_by(phone_number: params["From"].gsub("+1","").to_i)
+    ans = params["Body"]
+    user_riddle = UsersRiddle.where("created_at >= ?", Time.zone.now.beginning_of_day)
+    riddle = Riddle.find(user_riddle.first.riddle_id)
+    # binding.pry
     twiml = Twilio::TwiML::Response.new do |r|
-      r.Message "HAHAHAHHAA U SUCK"
+      r.Message ans
     end
     render xml: twiml.to_xml
   end
