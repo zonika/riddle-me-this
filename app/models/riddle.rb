@@ -4,7 +4,7 @@ class Riddle < ActiveRecord::Base
     if answer.include?(self.keyword)
       "#{answer} is correct! You are simply a genius!"
     else
-      "Wrong. The answer is #{self.answer}."
+      "Wrong. The answer is #{self.answer.downcase}"
     end
   end
 
