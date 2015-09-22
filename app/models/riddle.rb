@@ -1,10 +1,10 @@
 class Riddle < ActiveRecord::Base
 
   def validate_riddle(answer)
-    if answer.include?(keyword)
+    if answer.include?(self.keyword)
       "#{answer} is correct! You are simply a genius!"
     else
-      "Try again."
+      "Wrong. The answer is #{self.answer}."
     end
   end
 
