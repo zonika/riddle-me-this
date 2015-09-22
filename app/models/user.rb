@@ -2,8 +2,6 @@ class User < ActiveRecord::Base
   validates :phone_number, presence: true, uniqueness: true
   validates :name, presence: true
 
-  @@for_today = ''
-
   def self.send_questions
     @@for_today = Riddle.all.sample
     riddle = @@for_today.question
