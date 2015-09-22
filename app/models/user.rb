@@ -15,7 +15,6 @@ class User < ActiveRecord::Base
           :to => "+1"+number_to_send_to.to_s,
           :from => twilio_phone_number)
       rescue Twilio::REST::RequestError
-        binding.pry
       end
     end
   end
