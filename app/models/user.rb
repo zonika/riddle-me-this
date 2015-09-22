@@ -23,4 +23,10 @@ class User < ActiveRecord::Base
       end
     end
   end
+
+  def self.reset_answers
+    all.each do |user|
+      user.has_answered = false
+    end
+  end
 end

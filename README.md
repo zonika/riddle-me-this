@@ -2,7 +2,7 @@
 
 ## Description
 
-Add a short description of your app.
+Riddl is your productive distraction. When you and your friends hit your afternoon slump, stretch your cortex or have a laugh with Riddl.
 
 ## Screenshots
 
@@ -15,7 +15,7 @@ like?
 
 ## Features
 
-Bullet point some of the key features of your app here.
+* Webhooks with Twilio API 
 
 ## Usage
 

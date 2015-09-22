@@ -7,5 +7,4 @@ class Riddle < ActiveRecord::Base
       "Wrong. The answer is #{self.answer.downcase}"
     end
   end
-
 end
