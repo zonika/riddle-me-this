@@ -9,14 +9,14 @@ class User < ActiveRecord::Base
       twilio_token = ENV['TWILIO_AUTH_TOKEN']
       twilio_phone_number = "18452131363"
       @twilio_client = Twilio::REST::Client.new twilio_sid, twilio_token
-      # begin
+      begin
         message = @twilio_client.account.messages.create(
           :body => riddle,
           :to => "+1"+number_to_send_to.to_s,
           :from => twilio_phone_number)
-      # rescue Twilio::REST::RequestError
-      #   binding.pry
-      # end
+      rescue Twilio::REST::RequestError
+        binding.pry
+      end
     end
   end
 end
