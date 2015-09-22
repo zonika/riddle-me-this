@@ -5,9 +5,8 @@
 Riddl is your productive distraction. When you and your friends hit your afternoon slump, stretch your cortex or have a laugh with Riddl.
 
 ## Screenshots
-<!---
-SCREENSHOTS COMING SOON TO A RIDDL NEAR YOU.
--->
+
+*SCREENSHOTS COMING SOON TO A RIDDL NEAR YOU.*
 
 ## Background
 
@@ -27,9 +26,8 @@ If you can send a text, you can use Riddl. Sign up for Riddl and receive a riddl
 
 ## Development/Contribution
 
-<!--
-OPEN FOR BIZZ SOON.
--->
+*OPEN FOR BIZZ SOON.*
+
 ## Future
 
 * Ensure that user does not receive the same riddle more than once.
