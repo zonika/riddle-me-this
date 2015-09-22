@@ -9,9 +9,10 @@ class TextController < ApplicationController
     ans = params["Body"]
     user_riddle = UsersRiddle.where("created_at >= ?", Time.zone.now.beginning_of_day)
     riddle = Riddle.find(user_riddle.first.riddle_id)
+    validated_riddle = riddle.validate_riddle(ans)
     # binding.pry
     twiml = Twilio::TwiML::Response.new do |r|
-      r.Message ans
+      r.Message validated_riddle
     end
     render xml: twiml.to_xml
   end
