@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
+  root 'users#index'
+  resources :users, :only => [:index, :create, :show]
 
-  post '/send', to: "text#send_text_message"
-  post '/', to: 'text#send_sms'
+  post '/response', to: 'text#send_sms'
 end
