@@ -26,7 +26,6 @@ class User < ActiveRecord::Base
   end
 
   def self.send_answers
-    # answer = @@for_today.answer
     twilio_sid = ENV['TWILIO_ACCOUNT_SID']
     twilio_token = ENV['TWILIO_AUTH_TOKEN']
     twilio_phone_number = "18452131363"
@@ -34,12 +33,9 @@ class User < ActiveRecord::Base
 
     all.each do |user|
       number_to_send_to = user.phone_number
-      # binding.pry
       user_riddle = UsersRiddle.where("user_id" == user.id).last
       riddle = Riddle.find(user_riddle.riddle_id)
       answer = riddle.answer
-      # user_riddle = UsersRiddle.where("created_at >= ?", Time.zone.now.beginning_of_day)
-      # riddle = Riddle.find(user_riddle.last.riddle_id)
       begin
         unless user.has_answered
           @twilio_client.account.messages.create({

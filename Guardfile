@@ -4,7 +4,12 @@
 # end
 
 
-guard :rspec do
+guard :rspec, cmd: "bundle exec rspec" do
+  require "guard/rspec/dsl"
+  dsl = Guard::RSpec::Dsl.new(self)
+
+  
+
   watch(%r{^spec/.+_spec\.rb$})
   watch(%r{^lib/(.+)\.rb$})     { |m| "spec/lib/#{m[1]}_spec.rb" }
   watch('spec/rails_helper.rb')  { "spec" }
