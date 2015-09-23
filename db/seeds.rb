@@ -34,7 +34,6 @@ Riddle.create(question:"Which word in the dictionary is spelled incorrectly?", a
 Riddle.create(question:"What invention lets you look right through a wall?", answer:"Window", keyword: "window")
 Riddle.create(question:"What can you catch but not throw?", answer:"Cold", keyword: "cold")
 Riddle.create(question:"What is as light as a feather, but even the world's strongest man couldn't hold it for more than a minute?", answer:"Breath", keyword: "breath")
-Riddle.create(question:"What occurs once in every minute, twice in every moment, yet never in a thousand years?", answer:"M", keyword: " M ")
 Riddle.create(question:"What has four fingers and a thumb, but is not living?", answer:"Glove", keyword: "glove")
 Riddle.create(question:"What flies when it's born, lies when it's alive and runs when it's dead?", answer:"Snowflake", keyword: "snowflake")
 Riddle.create(question:"I am always there, some distance away, somewhere between land and sea and sky I lay, you may move towards me, yet distant I'll stay.", answer:"Horizon", keyword: "horizon")
