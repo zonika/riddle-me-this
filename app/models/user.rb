@@ -32,12 +32,12 @@ class User < ActiveRecord::Base
     @twilio_client = Twilio::REST::Client.new twilio_sid, twilio_token
 
     all.each do |user|
-      number_to_send_to = user.phone_number
-      user_riddle = UsersRiddle.where("user_id" == user.id).last
-      riddle = Riddle.find(user_riddle.riddle_id)
-      answer = riddle.answer
       begin
         unless user.has_answered
+          number_to_send_to = user.phone_number
+          user_riddle = UsersRiddle.where("user_id" == user.id).last
+          riddle = Riddle.find(user_riddle.riddle_id)
+          answer = riddle.answer
           @twilio_client.account.messages.create({
             :from => twilio_phone_number,
             :to => "+1" + number_to_send_to.to_s,
