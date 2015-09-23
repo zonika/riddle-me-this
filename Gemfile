@@ -33,13 +33,13 @@ group :development, :test do
   gem 'byebug'
 end
 
-group :test do
-  gem 'awesome-print'
-  gem 'guard-rspec', require: false
-  gem 'simplecov', require: false
-  # gem 'rspec-rails', '~> 3.1'
-  gem 'webmock'
-end
+# group :test do
+#   gem 'awesome-print'
+#   gem 'guard-rspec', require: false
+#   gem 'simplecov', require: false
+#   # gem 'rspec-rails', '~> 3.1'
+#   gem 'webmock'
+# end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
