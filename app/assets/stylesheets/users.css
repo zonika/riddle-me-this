@@ -115,7 +115,7 @@ ul{
 .cover {
   padding: 17%;
   background-color:rgba(255,255,255,0.7);
-  border: 3px solid #A3C68C;
+  /*border: 3px solid #A3C68C;*/
   border-radius: 50px;
   position:relative;
   z-index: 1;
