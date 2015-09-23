@@ -37,7 +37,7 @@ group :test do
   gem 'awesome-print'
   gem 'guard-rspec', require: false
   gem 'simplecov', require: false
-  gem 'rspec-rails'm '~> 3.1'
+  gem 'rspec-rails', '~> 3.1'
   gem 'webmock'
 end
 
