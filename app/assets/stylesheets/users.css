@@ -1,0 +1,256 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #fff;
+  border: 1px solid #fff;
+  margin: 3px;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: #A3C68C;
+}
+body {
+  text-align: center;
+}
+ul{
+  list-style-type: none;
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  /*-webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+}*/
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 30px;
+}
+
+
+/*
+ * Header
+ */
+.masthead-brand {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.masthead-nav > li {
+  display: inline-block;
+}
+.masthead-nav > li + li {
+  margin-left: 20px;
+}
+.masthead-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff; /* IE8 proofing */
+  color: rgba(255,255,255,.75);
+  border-bottom: 2px solid transparent;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: #a9a9a9;
+  border-bottom-color: rgba(255,255,255,.25);
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 768px) {
+  .masthead-brand {
+    float: left;
+  }
+  .masthead-nav {
+    float: right;
+  }
+}
+
+
+/*
+ * Cover
+ */
+
+.cover {
+  padding: 17%;
+  background-color:rgba(255,255,255,0.7);
+  border: 3px solid #A3C68C;
+  border-radius: 50px;
+  position:relative;
+  z-index: 1;
+
+}
+.cover .btn-lg {
+  padding: 10px 10px;
+  font-weight: bold;
+}
+
+#button {
+  margin-top: 17px;
+}
+
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+  color: black; /* IE8 proofing */
+}
+
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 20%;
+  }
+}
+
+@media (max-width: 991px){
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 300px;
+  }
+}
+
+@media (max-width: 500px) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%;
+  }
+}
+
+
+
+#clouds{position:absolute;top:0;right:0;bottom:0;left:0;z-index: 0;font-size: 500px;color:#530575;}
+   [class^="cloud-"]{
+     position:absolute;right:120%;width:200px;height:60px;
+   }
+.cloud-1 {
+  top: 50px;
+  -webkit-animation: moveclouds 30s linear infinite;
+  -moz-animation: moveclouds 30s linear infinite;
+  -o-animation: moveclouds 30s linear infinite;
+  animation: moveclouds 30s linear infinite;
+}
+.cloud-2 {
+  top: 100px;
+  opacity: 0.8;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  transform: scale(0.8);
+  -webkit-animation: moveclouds 45s linear infinite;
+  -moz-animation: moveclouds 45s linear infinite;
+  -o-animation: moveclouds 45s linear infinite;
+  animation: moveclouds 45s linear infinite;
+  -webkit-animation-delay: 5s;
+  -moz-animation-delay: 5s;
+  animation-delay: 5s;
+}
+.cloud-3 {
+  top: 150px;
+  opacity: 0.6;
+  -webkit-transform: scale(0.6);
+  -moz-transform: scale(0.6);
+  transform: scale(0.6);
+  -webkit-animation: moveclouds 40s linear infinite;
+  -moz-animation: moveclouds 40s linear infinite;
+  -o-animation: moveclouds 40s linear infinite;
+  animation: moveclouds 40s linear infinite;
+}
+.cloud-4 {
+  top: 200px;
+  opacity: 0.75;
+  -webkit-transform: scale(0.75);
+  -moz-transform: scale(0.75);
+  transform: scale(0.75);
+  -webkit-animation: moveclouds 26s linear infinite;
+  -moz-animation: moveclouds 26s linear infinite;
+  -o-animation: moveclouds 26s linear infinite;
+  animation: moveclouds 26s linear infinite;
+  -webkit-animation-delay: 8s;
+  -moz-animation-delay: 8s;
+  animation-delay: 8s;
+}
+@-webkit-keyframes moveclouds {
+  0%   { right: -20%; }
+  100% { right: 120%; }
+}
+@-moz-keyframes moveclouds {
+  0%   { right: -20%; }
+  100% { right: 120%; }
+}
+@-o-keyframes moveclouds {
+  0%   { right: -20%; }
+  100% { right: 120%; }
+}

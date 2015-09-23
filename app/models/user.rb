@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-  validates :phone_number, presence: true, uniqueness: true
+  validates :phone_number, presence: true, uniqueness: true, format: { with: /\d{10}/, message: "must be a number" }
   validates :name, presence: true
 
   def self.send_questions

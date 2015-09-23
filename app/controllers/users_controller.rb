@@ -4,7 +4,7 @@ class UsersController < ApplicationController
   end
 
   def create
-    @user = User.new(user_params)
+    @user = User.new(nice_params)
     if @user.save
       redirect_to @user, notice: "User was successfully created."
     else
@@ -19,5 +19,8 @@ class UsersController < ApplicationController
   private
   def user_params
     params.require(:user).permit(:name, :phone_number)
+  end
+  def nice_params
+    {name: user_params[:name],phone_number: user_params[:phone_number].gsub(/\D/,'').to_i}
   end
 end
