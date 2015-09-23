@@ -190,7 +190,7 @@ ul{
   }
 }
 
-
+/*cloud animation code via http://codepen.io/shukla304/pen/Fmbly*/
 
 #clouds{position:absolute;top:0;right:0;bottom:0;left:0;z-index: 0;font-size: 500px;color:#530575;}
    [class^="cloud-"]{
