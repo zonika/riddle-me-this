@@ -1,0 +1,19 @@
+<%= form_for(@user, remote: true) do |f| %>
+<% if @user.errors.any? %>
+  <div class="alert alert-danger alert-dismissible" role="alert">
+     <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <% @user.errors.full_messages.each do |msg| %>
+      <%= msg %><br>
+    <% end %>
+  </div>
+<% end %>
+ <div class="field">
+   <%= f.label :name, "Username" %><br>
+   <%= f.text_field :name, class: "form-control", required: true %><br>
+   <%= f.label :phone_number %><br>
+   <%= f.telephone_field :phone_number, class: "form-control", id: 'phone', required: true %>
+ </div>
+ <div id='button'>
+   <%= f.submit "Create Account", class: "btn btn-success form-group" %>
+ </div>
+<% end %>
