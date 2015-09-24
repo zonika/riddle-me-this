@@ -16,10 +16,9 @@ class User < ActiveRecord::Base
    @question = riddle.question
 
    all.each do |user|
-     @number_to_send_to = user.phone_number
      begin
        user_with_riddle = UsersRiddle.create(user_id: user.id, riddle_id: riddle.id)
-       user.create_text(@question)
+       user.create_text(@question,user.phone_number)
      rescue Twilio::REST::RequestError => error
        puts error.message
      end
@@ -32,11 +31,10 @@ class User < ActiveRecord::Base
    all.each do |user|
      begin
        unless user.has_answered
-         @number_to_send_to = user.phone_number
          user_riddle = UsersRiddle.where("user_id" == user.id).last
          riddle = Riddle.find(user_riddle.riddle_id)
          @answer = riddle.answer
-         user.create_text(@answer)
+         user.create_text(@answer,user.phone_number)
        end
      rescue Twilio::REST::RequestError => error
        puts error.message
@@ -49,10 +47,10 @@ class User < ActiveRecord::Base
   points += 1
  end
 
- def create_text(body)
+ def create_text(body,number)
    User.twilio_client.account.messages.create({
      :from => @@twilio_phone_number,
-     :to => "+1" + @number_to_send_to.to_s,
+     :to => "+1" + number.to_s,
      :body => body
      })
  end
