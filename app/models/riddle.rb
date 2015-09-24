@@ -14,7 +14,7 @@ class Riddle < ActiveRecord::Base
       user.has_answered = true
       user.add_points
       user.save
-      "#{answer} is correct! You are simply a genius! You now have #{pluralize(user.points,'point')}."
+      "#{answer} is correct! You are simply a genius! You now have #{user.points} points."
     else
       @@disses.sample + " Try again."
     end
