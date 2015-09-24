@@ -168,15 +168,14 @@ ul{
 
 @media (min-width: 992px) {
   .masthead,
-  .mastfoot,
   .cover-container {
     width: 20%;
   }
+
 }
 
 @media (max-width: 991px){
   .masthead,
-  .mastfoot,
   .cover-container {
     width: 300px;
   }
@@ -184,7 +183,6 @@ ul{
 
 @media (max-width: 500px) {
   .masthead,
-  .mastfoot,
   .cover-container {
     width: 100%;
   }

@@ -18,21 +18,20 @@
               </div>
             <% end %>
              <div class="field">
-               <%= f.label :name %><br>
+               <%= f.label :name, "Username" %><br>
                <%= f.text_field :name, class: "form-control", required: true %><br>
                <%= f.label :phone_number %><br>
                <%= f.telephone_field :phone_number, class: "form-control", id: 'phone', required: true %>
              </div>
              <div id='button'>
-               <%= f.submit nil, class: "btn btn-success form-group" %>
+               <%= f.submit "Create Account", class: "btn btn-success form-group" %>
              </div>
             <% end %>
           </div>
 
-          <div class="mastfoot">
-            <div class="inner">
-              <p>footer shiiiiiiit</p>
-            </div>
+        </div>
+        <div class="mastfoot">
+          <div class="inner">
+            <p>Created by Diane Cai, Evan Hawk, Matthew Krey, and Zoe Chodosh. Find the code and an overview <a href="https://github.com/zonika/riddle-me-this">here</a>.</p>
           </div>
-
         </div>
