@@ -9,7 +9,15 @@ class Riddle < ActiveRecord::Base
     'Close, but no cigar.',
     'I remember my first riddle...',
     'Silly human, no cake for you!',
-    'LOL, nah.'
+    'LOL, nah.',
+    'Seriously? That\'s your answer?',
+    'Please guess again. My head hurts now...',
+    '...just guess again...please just guess again',
+    'Why are you doing this to me? Please answer correctly.',
+    'Should I just turn myself off until you can think of the right answer?',
+    'I\'m going to get a beer, you keep banging your head against the wall...',
+    'That is a great answer - if you enjoy being wrong.',
+    'If being wrong was a game, you\'d get a gold medal!'
   ]
 
   def validate_riddle(answer,user)
@@ -21,5 +29,4 @@ class Riddle < ActiveRecord::Base
       @@disses.sample + " Try again."
     end
   end
-
 end
