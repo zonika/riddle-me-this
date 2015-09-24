@@ -44,7 +44,7 @@ class User < ActiveRecord::Base
  end
 
  def add_points
-  points += 1
+  self.points += 1
  end
 
  def create_text(body,number)
