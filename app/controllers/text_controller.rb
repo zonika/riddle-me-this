@@ -10,6 +10,8 @@ class TextController < ApplicationController
     user_riddle = UsersRiddle.where("created_at >= ?", Time.zone.now.beginning_of_day)
     riddle = Riddle.find(user_riddle.last.riddle_id)
     response = riddle.validate_riddle(ans,user)
+
+    # handle Webhook with TwiML Response Object
     twiml = Twilio::TwiML::Response.new do |r|
       r.Message response
     end
