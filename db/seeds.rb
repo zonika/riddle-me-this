@@ -102,4 +102,4 @@ Riddle.create(question:"What word becomes shorter when you add two letters to it
 Riddle.create(question:"What travels around the world but stays in one spot?", answer:"A stamp!", keyword: "stamp")
 Riddle.create(question:"What occurs once in a minute, twice in a moment and never in one thousand years?", answer:"The letter M", keyword: " M ")
 Riddle.create(question:"What has 4 eyes but can’t see?", answer:"Mississippi", keyword: "Mississippi")
-User.create(name: "diane", phone_number: "16313275832")
+User.create(name: "diane", phone_number: 6313275832)
