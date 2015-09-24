@@ -62,7 +62,6 @@ class User < ActiveRecord::Base
    end
  end
  def send_welcome
-   @number_to_send_to = phone_number
-   create_text("Welcome to Riddl!! You can text STOP to this number anytime to quit the game.")
+   create_text("Welcome to Riddl!! You can text STOP to this number anytime to quit the game.",phone_number)
  end
 end
