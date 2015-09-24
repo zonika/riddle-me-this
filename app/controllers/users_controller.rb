@@ -12,6 +12,10 @@ class UsersController < ApplicationController
     end
   end
 
+  def leaderboard
+    @users = User.order(:points).limit(10)
+  end
+
   private
   def user_params
     params.require(:user).permit(:name, :phone_number)

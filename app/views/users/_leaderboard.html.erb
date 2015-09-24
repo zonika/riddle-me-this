@@ -1,0 +1,22 @@
+<strong>Top Scoring Riddlers</strong>
+<table class="table table-condensed">
+  <tr>
+    <td>
+      <strong>Name</strong>
+    </td>
+    <td>
+      <strong>Score</strong>
+    </td>
+  </tr>
+  <% @users.each do |user|%>
+    <tr>
+      <td>
+        <%= user.name.capitalize %>
+      </td>
+      <td>
+        <%= user.points %>
+      </td>
+    </tr>
+  <% end %>
+</table>
+<%= link_to 'Sign Up', :root, remote:true %>
