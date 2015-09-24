@@ -19,7 +19,7 @@ class User < ActiveRecord::Base
      @number_to_send_to = user.phone_number
      begin
        user_with_riddle = UsersRiddle.create(user_id: user.id, riddle_id: riddle.id)
-       create_text(@question)
+       user.create_text(@question)
      rescue Twilio::REST::RequestError => error
        puts error.message
      end
