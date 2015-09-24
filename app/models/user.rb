@@ -1,7 +1,7 @@
 class User < ActiveRecord::Base
  validates :phone_number, presence: true, uniqueness: true, format: { with: /\d{10}/, message: "must be a number" }
  validates :name, presence: true, uniqueness: true
- after_save :send_welcome
+ after_create :send_welcome
 
  @@twilio_sid = ENV['TWILIO_ACCOUNT_SID']
  @@twilio_token = ENV['TWILIO_AUTH_TOKEN']

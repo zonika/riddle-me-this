@@ -8,7 +8,6 @@ class UsersController < ApplicationController
     if @user.save
       flash[:notice] = "yayayayaya"
     else
-
       render action: "index", notice: "Something went wrong. Try again."
     end
   end
