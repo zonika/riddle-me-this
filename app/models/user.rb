@@ -36,7 +36,7 @@ class User < ActiveRecord::Base
          user_riddle = UsersRiddle.where("user_id" == user.id).last
          riddle = Riddle.find(user_riddle.riddle_id)
          @answer = riddle.answer
-         create_text(@answer)
+         user.create_text(@answer)
        end
      rescue Twilio::REST::RequestError => error
        puts error.message
@@ -49,7 +49,6 @@ class User < ActiveRecord::Base
   points += 1
  end
 
- private
  def create_text(body)
    User.twilio_client.account.messages.create({
      :from => @@twilio_phone_number,
@@ -57,6 +56,8 @@ class User < ActiveRecord::Base
      :body => body
      })
  end
+
+ private
  def self.reset_answers
    all.each do |user|
      user.has_answered = false
