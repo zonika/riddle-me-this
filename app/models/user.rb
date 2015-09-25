@@ -32,18 +32,22 @@ class User < ActiveRecord::Base
       @answer = riddle.answer
       user.create_text("The answer is #{@answer.downcase} Better luck next time!",user.phone_number)
       user.has_answered = true
+      user.save
     end
    end
  end
 
  def add_points
   t = Time.now.hour
+  self.has_answered = true
   self.points += 100 - ((t-17)*10)
+  self.save
  end
 
 def subtract_points
   unless self.points == 0
     self.points -= 5
+    self.save
   end
 end
 
@@ -64,6 +68,7 @@ def create_text(body,number)
  def self.reset_answers
    all.each do |user|
      user.has_answered = false
+     user.save
    end
  end
  def send_welcome
