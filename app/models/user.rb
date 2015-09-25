@@ -12,6 +12,7 @@ class User < ActiveRecord::Base
   end
 
  def self.send_questions
+   self.reset_answers
    riddle = Riddle.all.sample
    @question = riddle.question
 
@@ -30,9 +31,9 @@ class User < ActiveRecord::Base
       riddle = Riddle.find(user_riddle.riddle_id)
       @answer = riddle.answer
       user.create_text(@answer,user.phone_number)
+      user.has_answered = true
     end
    end
-   self.reset_answers
  end
 
  def add_points
