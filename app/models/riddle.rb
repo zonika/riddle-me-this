@@ -16,7 +16,8 @@ class Riddle < ActiveRecord::Base
       user.save
       "#{answer} is correct! You are simply a genius! You now have #{user.points} points."
     else
-      @@disses.sample + " Try again."
+      user.subtract_points
+      @@disses.sample + " Try again. (Your current score is #{user.points})"
     end
   end
 end
