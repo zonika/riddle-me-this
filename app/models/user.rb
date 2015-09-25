@@ -47,14 +47,14 @@ def subtract_points
 end
 
 
- def create_text(body,number)
-   begin
-   User.twilio_client.account.messages.create({
-     :from => @@twilio_phone_number,
-     :to => "+1" + number.to_s,
-     :body => body
-     })
-   rescue Twilio::REST::RequestError => error
+def create_text(body,number)
+  begin
+  User.twilio_client.account.messages.create({
+    :from => @@twilio_phone_number,
+    :to => "+1" + number.to_s,
+    :body => body
+  })
+  rescue Twilio::REST::RequestError => error
      puts error.message
    end
  end
@@ -66,6 +66,6 @@ end
    end
  end
  def send_welcome
-   create_text("Welcome to Riddl!! You can text STOP to this number anytime to quit the game.",phone_number)
+   create_text("Welcome to Riddl!! You will receive a riddle once a day at 1pm EST. Guess the correct answer to win points and make your way to the top of the leaderboard! You can text STOP to this number anytime to quit the game.",phone_number)
  end
 end

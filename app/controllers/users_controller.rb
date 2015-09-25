@@ -13,7 +13,7 @@ class UsersController < ApplicationController
   end
 
   def leaderboard
-    @users = User.order(:points).limit(10)
+    @users = User.order(points: :desc).limit(10)
   end
 
   private
