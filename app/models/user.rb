@@ -30,7 +30,7 @@ class User < ActiveRecord::Base
       user_riddle = UsersRiddle.where("user_id" == user.id).last
       riddle = Riddle.find(user_riddle.riddle_id)
       @answer = riddle.answer
-      user.create_text("The answer is #{@answer} Better luck next time!",user.phone_number)
+      user.create_text("The answer is #{@answer.downcase} Better luck next time!",user.phone_number)
       user.has_answered = true
     end
    end
