@@ -37,7 +37,7 @@ class User < ActiveRecord::Base
 
  def add_points
   t = Time.now.hour
-  self.points += 100 - ((t-13)*10)
+  self.points += 100 - ((t-17)*10)
  end
 
 def subtract_points
