@@ -6,8 +6,8 @@ Riddl is your productive distraction. When you and your friends hit your afterno
 
 ## Screenshots
 
-<img width="791" alt="screen shot 2015-09-28 at 9 45 29 am" src="https://cloud.githubusercontent.com/assets/10355200/10137071/bc9eb6a4-65c5-11e5-8a0c-1b6c489f3ef8.png">
-<img width="810" alt="riddl leaderboards" src="https://cloud.githubusercontent.com/assets/10355200/10136064/7190c97c-65c0-11e5-86b7-951378c942fc.png">
+-><img width="791" alt="screen shot 2015-09-28 at 9 45 29 am" src="https://cloud.githubusercontent.com/assets/10355200/10137071/bc9eb6a4-65c5-11e5-8a0c-1b6c489f3ef8.png"><-
+-><img width="810" alt="riddl leaderboards" src="https://cloud.githubusercontent.com/assets/10355200/10136064/7190c97c-65c0-11e5-86b7-951378c942fc.png"><-
 
 ## Background
 
@@ -32,7 +32,7 @@ Fork the Repo, submit a PR, hit one of us up on Twitter - the main objective of 
 ## What You Need To Know Before You Work With Twilio 
 
 1) To *send* SMS messages to yours users, you will need to use the [Twilio API](https://www.twilio.com/api). To *receive* SMS messages to your users, you will need to webhook into your app using a [TwiML Response Object](https://www.twilio.com/blog/2014/11/an-easier-way-to-write-twiml-templates-in-rails-and-sinatra.html) in whatever controller you create to handle receiving SMS messages from your user. It should look something like this:<br> 
-<img width="374" alt="webhook" src="https://cloud.githubusercontent.com/assets/10355200/10136946/2ec641c6-65c5-11e5-9e1b-4b4a5cfb0398.png"><br>
+-><img width="374" alt="webhook" src="https://cloud.githubusercontent.com/assets/10355200/10136946/2ec641c6-65c5-11e5-9e1b-4b4a5cfb0398.png"><-<br>
 **Note that you are dealing with two file formats, .xml and TwiML.**
 
 ## Author
