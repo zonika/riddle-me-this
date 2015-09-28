@@ -36,11 +36,11 @@ If you can send a text, you can use Riddl. Sign up for Riddl and receive a riddl
 
 ## Author
 
-Programmer's of The Bizz
-[Zoe Chodosh](http://web0715.students.flatironschool.com/students/zoe_chodosh.html)
-[Evan Hawk](http://web0715.students.flatironschool.com/students/evan_hawk.html)
-[Diane Cai](http://web0715.students.flatironschool.com/students/diane_cai.html)
-[Matthew Krey](http://web0715.students.flatironschool.com/students/matt_krey.html)
+Programmer's of The Bizz <br>
+[Zoe Chodosh](http://web0715.students.flatironschool.com/students/zoe_chodosh.html)<br>
+[Evan Hawk](http://web0715.students.flatironschool.com/students/evan_hawk.html)<br>
+[Diane Cai](http://web0715.students.flatironschool.com/students/diane_cai.html)<br>
+[Matthew Krey](http://web0715.students.flatironschool.com/students/matt_krey.html)<br>
 
 ## License
 
