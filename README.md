@@ -7,6 +7,7 @@ Riddl is your productive distraction. When you and your friends hit your afterno
 ## Screenshots
 
 <img width="1265" alt="riddle homepage" src="https://cloud.githubusercontent.com/assets/10355200/10135759/837814ee-65be-11e5-98dc-faac195bd0b3.png">
+<img width="810" alt="riddl leaderboards" src="https://cloud.githubusercontent.com/assets/10355200/10136064/7190c97c-65c0-11e5-86b7-951378c942fc.png">
 
 ## Background
 
