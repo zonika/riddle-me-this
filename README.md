@@ -38,7 +38,10 @@ Fork the Repo, submit a PR, hit one of us up on Twitter - the main objective of 
 <br>
 2) You will need to [disable CSRF to allow Twilio to make 3rd party POST requests](http://stackoverflow.com/questions/11930491/rails-disable-csrf-for-a-3rd-party-post-request) to your app. 
 <br>
+<br>
 3) In your controller you build to handle receiving SMS messages, Twilio will only recognize your webhook if it is defined in a send_sms method. Your method should look something like: <br>
+<img width="380" alt="screen shot 2015-09-28 at 10 40 24 am" src="https://cloud.githubusercontent.com/assets/10355200/10138686/b66cfbbc-65cd-11e5-824c-34f4d6aa5251.png">
+
 
 ## Author
 
