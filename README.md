@@ -6,7 +6,7 @@ Riddl is your productive distraction. When you and your friends hit your afterno
 
 ## Screenshots
 
-*SCREENSHOTS COMING SOON TO A RIDDL NEAR YOU.*
+<img width="1265" alt="riddle homepage" src="https://cloud.githubusercontent.com/assets/10355200/10135759/837814ee-65be-11e5-98dc-faac195bd0b3.png">
 
 ## Background
 
