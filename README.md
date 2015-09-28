@@ -6,7 +6,8 @@ Riddl is your productive distraction. When you and your friends hit your afterno
 
 ## Screenshots
 
-*SCREENSHOTS COMING SOON TO A RIDDL NEAR YOU.*
+<img width="1265" alt="riddle homepage" src="https://cloud.githubusercontent.com/assets/10355200/10135759/837814ee-65be-11e5-98dc-faac195bd0b3.png">
+<img width="810" alt="riddl leaderboards" src="https://cloud.githubusercontent.com/assets/10355200/10136064/7190c97c-65c0-11e5-86b7-951378c942fc.png">
 
 ## Background
 
@@ -26,17 +27,22 @@ If you can send a text, you can use Riddl. Sign up for Riddl and receive a riddl
 
 ## Development/Contribution
 
-*OPEN FOR BIZZ SOON.*
+Fork the Repo, submit a PR, hit one of us up on Twitter - the main objective of this project was to build something fun and to get people up during their afternoon lull. 
 
-## Future
+## What You Need To Know Before You Work With Twilio 
 
-* Ensure that user does not receive the same riddle more than once.
-* Add more difficult/more hilarious riddles!
+1) To send SMS messages, you will need to use the [Twilio API](https://www.twilio.com/api). To receive SMS messages, you will need to webhook into your app using a [TwiML Response Object](https://www.twilio.com/blog/2014/11/an-easier-way-to-write-twiml-templates-in-rails-and-sinatra.html) in whatever controller you create to handle receiving SMS messages from your user. It should look something like this: 
+<img width="374" alt="webhook" src="https://cloud.githubusercontent.com/assets/10355200/10136946/2ec641c6-65c5-11e5-9e1b-4b4a5cfb0398.png"><br>
+**Note that you are dealing with two file formats, .xml and TwiML.**
 
 ## Author
 
-Link to your blog, twitter, etc!
+Programmer's of The Bizz <br>
+[Zoe Chodosh](http://web0715.students.flatironschool.com/students/zoe_chodosh.html)<br>
+[Evan Hawk](http://web0715.students.flatironschool.com/students/evan_hawk.html)<br>
+[Diane Cai](http://web0715.students.flatironschool.com/students/diane_cai.html)<br>
+[Matthew Krey](http://web0715.students.flatironschool.com/students/matt_krey.html)<br>
 
 ## License
 
-Riddle Me This is MIT Licensed. See LICENSE for details.
+Riddl is MIT Licensed. See LICENSE for details.
