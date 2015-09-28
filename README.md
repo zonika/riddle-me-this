@@ -27,12 +27,11 @@ If you can send a text, you can use Riddl. Sign up for Riddl and receive a riddl
 
 ## Development/Contribution
 
-*OPEN FOR BIZZ SOON.*
+Fork the Repo, submit a PR, hit one of us up on Twitter - the main objective of this project was to build something fun and to get people up during their afternoon lull. 
 
-## Future
+## What You Need To Know Before You Work With Twilio 
 
-* Ensure that user does not receive the same riddle more than once.
-* Add more difficult/more hilarious riddles!
+1) To send SMS messages, you will need to use the [Twilio API](https://www.twilio.com/api). To receive SMS messages, you will need to webhook into your app using a [TwiML Response Object](https://www.twilio.com/blog/2014/11/an-easier-way-to-write-twiml-templates-in-rails-and-sinatra.html) in whatever controller you create to handle receiving SMS messages from your user. It should look something like this: 
 
 ## Author
 
@@ -44,4 +43,4 @@ Programmer's of The Bizz <br>
 
 ## License
 
-Riddle Me This is MIT Licensed. See LICENSE for details.
+Riddl is MIT Licensed. See LICENSE for details.
