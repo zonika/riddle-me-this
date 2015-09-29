@@ -31,7 +31,7 @@ Fork the Repo, submit a PR, hit one of us up on Twitter - the main objective of 
 
 ## What You Need To Know Before You Work With Twilio In Rails 
 
-1) To *send* SMS messages to yours users, you will need to use the [Twilio API](https://www.twilio.com/api). To *receive* SMS messages to your users, you will need to webhook into your app using a [TwiML Response Object](https://www.twilio.com/blog/2014/11/an-easier-way-to-write-twiml-templates-in-rails-and-sinatra.html) in whatever controller you create to handle receiving SMS messages from your user. It should look something like this:<br> 
+1) To *send* SMS messages to your users, you will need to use the [Twilio API](https://www.twilio.com/api). To *receive* SMS messages to your users, you will need to webhook into your app using a [TwiML Response Object](https://www.twilio.com/blog/2014/11/an-easier-way-to-write-twiml-templates-in-rails-and-sinatra.html) in whatever controller you create to handle receiving SMS messages from your user. It should look something like this:<br> 
 <img width="374" alt="webhook" src="https://cloud.githubusercontent.com/assets/10355200/10136946/2ec641c6-65c5-11e5-9e1b-4b4a5cfb0398.png"><br>
 **Note that you are dealing with two file formats, .xml and TwiML.**
 <br>
